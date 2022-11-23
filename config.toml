@@ -1,0 +1,406 @@
+baseurl = "https://adrianfaith.ca"
+title = "Adrian Faith Woodworking"
+theme = "hugo-universal-theme"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+disqusShortname = ""
+googleAnalytics = "G-7XB3BJ10W0"
+summaryLength = 70
+paginate = 10
+pluralizelisttitles = false
+
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    title = "Adrian Faith Woodworking"
+    languageName = "EN"
+    weight = 1
+
+[[languages.en.menu.main]]
+    name       = "Home"
+    identifier = "menu.home"
+    url        = "/"
+    weight     = 1
+
+[[languages.en.menu.main]]
+    name       = "About"
+    identifier = "menu.about"
+    url        = "/about/"
+    weight     = 2
+
+[[languages.en.menu.main]]
+    name       = "Gallery"
+    identifier = "menu.gallery" 
+    url        = "/gallery/"
+    weight     = 3
+
+[[languages.en.menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "/contact/"
+    weight     = 4
+
+# FR
+[languages.fr]
+    contentDir = "content/fr"
+    title = "Adrian Faith Woodworking"
+    languageName = "FR"
+    weight = 2
+
+# Main menu
+[[languages.fr.menu.main]]
+    name       = "Accueil"
+    identifier = "menu.home"
+    url        = "/fr/"
+    weight     = 1
+
+[[languages.fr.menu.main]]
+    name       = "Qui sommes-nous"
+    identifier = "menu.about"
+    url        = "/fr/about/"
+    weight     = 2
+
+[[languages.fr.menu.main]]
+    name       = "Galerie"
+    identifier = "menu.gallery" 
+    url        = "/fr/gallery/"
+    weight     = 3
+
+[[languages.fr.menu.main]]
+    name       = "Contacter"
+    identifier = "contact"
+    url        = "/fr/contact/"
+    weight     = 4
+
+
+
+
+
+
+
+
+[languages.en.params]
+    viewMorePostLink = "/blog/"
+    author = "Flewid Inc."
+    defaultKeywords = ["flewid", "adrian faith", "woodworking" , "cabinetry", "shelves", "mantels", "tables", "lac ste marie", "quebec" ]
+    mainSections = ["blog"]
+    defaultDescription = "#1 Custom Woodwork using local reclaimed wood. Call us today for a free quote!"
+
+    # Social media
+    facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
+    twitter_site = "GoHugoIO" # the Twitter handle of your site (without the '@')
+    default_sharing_image = "img/sharing-default.webp"
+
+    # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
+    enableGoogleMaps = false
+    googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+
+    latitude = "-12.043333"
+    longitude = "-77.028333"
+
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "marsala"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 50 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - register your account to https://formspree.io/register
+    # - login and create new form
+    # - set your form's endpoint url under 'formspree_action' below
+    # - upload the generated site to your server
+    # - test a dummy email yourself
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io endpoint url
+    formspree_action = "https://formspree.io/f/mzbwwrkq"
+    contact_form_ajax = true
+
+    # Formspree form supports Google reCAPTCHA Key (type v2).
+    # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
+    #
+    # By default, Formspree use a redirect page for recaptcha widget.
+    # If you use a recaptcha widget in your contact page, you should do next steps.
+    # (if you don't want, skip these steps)
+    #
+    #   1. register your site on Google recaptcha admin page: https://www.google.com/recaptcha/admin
+    #   2. select reCAPTCHA v2 and checkbox widget type.
+    #   3. remember site key and secret key.
+    #   4. enter secret key into "Custom reCAPTCHA Key" field in your Formspree form setting page.
+    #   5. change `enableRecaptchaInContactForm` is to true
+    #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
+    #
+    enableRecaptchaInContactForm = true
+    googleRecaptchaKey = "6Ld6lCAjAAAAAOQrHxziRWYjxeyDhX-7_h6N2hvC"
+
+    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+    copyright = "Copyright © 2022, Adrian Faith Woodworking; all rights reserved."
+    privacy_text = "Privacy"
+    privacy_url = "/privacy/"
+    terms_text = "Terms"
+    terms_url = "/terms/"
+
+    # Format dates with Go's time formatting
+    date_format = "January 2, 2006"
+
+    dropdown_mouse_over = true
+
+    disabled_logo = false
+    logo_text = "Adrian Faith Woodworking"
+
+    logo = "img/logo.webp"
+    logo_small = "img/logo_small.webp"
+    contact_url = "/contact"
+    address = """<p class="text-uppercase"><strong>Adrian Faith Woodworking</strong>
+        <br>3 Rue Faith
+        <br>Lac-Sainte-Marie
+        <br>Quebec
+        <br>J0X 1Z0
+      </p>
+      """
+    galtitle = "Latest from our workshop"
+    galdesc= "This is a description text that goes on the gallery page"
+    
+    galimage1= "/img/gallery/tables.webp"
+    galimage1_url= "/gallery/tables/"
+    galimage1_text= "Tables"
+    
+    galimage2= "/img/gallery/shelving.webp"
+    galimage2_url= "/gallery/shelving/"
+    galimage2_text= "Shelving"
+    
+    galimage3= "/img/gallery/counters.webp"
+    galimage3_url= "/gallery/counters/"
+    galimage3_text= "Counters"
+    
+    galimage4= "/img/gallery/mantels.webp"
+    galimage4_url= "/gallery/mantels/"
+    galimage4_text= "Mantels"
+    
+    galimage5= "/img/sample.webp"
+    galimage5_url= "/gallery/cabinetry/"
+    galimage5_text= "Cabinetry"
+    
+    galimage6= "/img/gallery/barndoors.webp"
+    galimage6_url= "/gallery/barn-doors/"
+    galimage6_text= "Barn Doors"
+    
+    galimage7= "/img/sample.webp"
+    galimage7_url= "/gallery/exposed-beam/"
+    galimage7_text= "Exposed Beam"
+    
+    galimage8= "/img/sample.webp"
+    galimage8_url= "/gallery/accent-walls/"
+    galimage8_text= "Accent Walls"
+    
+    galimage9= "/img/gallery/various.webp"
+    galimage9_url= "/gallery/various/"
+    galimage9_text= "Various"
+
+
+[languages.fr.params]
+    viewMorePostLink = "/blog/"
+    author = "DevCows"
+    defaultKeywords = ["devcows", "hugo", "go"]
+    mainSections = ["blog"]
+    defaultDescription = "Site template made by Devcows using Hugo"
+
+    # Social media
+    facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
+    twitter_site = "GoHugoIO" # the Twitter handle of your site (without the '@')
+    default_sharing_image = "img/sharing-default.webp"
+
+    # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
+    enableGoogleMaps = true
+    googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+
+    latitude = "-12.043333"
+    longitude = "-77.028333"
+
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "marsala"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 50 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - register your account to https://formspree.io/register
+    # - login and create new form
+    # - set your form's endpoint url under 'formspree_action' below
+    # - upload the generated site to your server
+    # - test a dummy email yourself
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io endpoint url
+    formspree_action = "https://formspree.io/f/mzbwwrkq"
+    contact_form_ajax = true
+
+    # Formspree form supports Google reCAPTCHA Key (type v2).
+    # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
+    #
+    # By default, Formspree use a redirect page for recaptcha widget.
+    # If you use a recaptcha widget in your contact page, you should do next steps.
+    # (if you don't want, skip these steps)
+    #
+    #   1. register your site on Google recaptcha admin page: https://www.google.com/recaptcha/admin
+    #   2. select reCAPTCHA v2 and checkbox widget type.
+    #   3. remember site key and secret key.
+    #   4. enter secret key into "Custom reCAPTCHA Key" field in your Formspree form setting page.
+    #   5. change `enableRecaptchaInContactForm` is to true
+    #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
+    #
+    enableRecaptchaInContactForm = true
+    googleRecaptchaKey = "6Ld6lCAjAAAAAOQrHxziRWYjxeyDhX-7_h6N2hvC"
+
+    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+    copyright = "Copyright © 2015 - 2016, YourCompany; all rights reserved."
+    privacy_text = "Confidentialité"
+    privacy_url = "/fr/privacy/"
+    terms_text = "Conditions"
+    terms_url = "/fr/terms/"
+
+    # Format dates with Go's time formatting
+    date_format = "January 2, 2006"
+
+    dropdown_mouse_over = true
+
+    disabled_logo = true
+    logo_text = "Adrian Faith Woodworking"
+
+    logo = "img/logo.png"
+    logo_small = "img/logo-small.png"
+    contact_url = "/contact"
+    address = """<p class="text-uppercase"><strong>Universal Ltd.</strong>
+        <br>13/25 New Avenue
+        <br>Newtown upon River
+        <br>45Y 73J
+        <br>England
+        <br>
+        <strong>Great Britain</strong>
+      </p>
+      """
+    galtitle = "Dernières nouvelles de notre atelier"
+    galdesc= "This is a description text that goes on the gallery page"
+    galimage1= "/img/300x300_sample.webp"
+    galimage1_url= "/fr/gallery/tables/"
+    galimage2= "/img/300x300_sample.webp"
+    galimage2_url= "/fr/gallery/shelving/"
+    galimage3= "/img/300x300_sample.webp"
+    galimage3_url= "/fr/gallery/accent-walls/"
+    galimage4= "/img/300x300_sample.webp"
+    galimage4_url= "/fr/gallery/mantels/"
+    galimage5= "/img/300x300_sample.webp"
+    galimage5_url= "/fr/gallery/cabinetry/"
+    galimage6= "/img/300x300_sample.webp"
+    galimage6_url= "/fr/gallery/various/"
+
+
+[permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
+
+# Enable or disable top bar with social icons
+[languages.en.params.topbar]
+    enable = true
+    text = """
+    <p class="hidden-sm hidden-xs"><a class="white" href="tel:18196619069">+1 819.661.9069</a> <span class="grey">|</span> <a href="mailto:adrian@adrianfaith.ca" class="white">adrian@adrianfaith.ca</a></p>  
+  
+  
+      """
+[languages.fr.params.topbar]
+    enable = true
+    text = """
+    <p class="hidden-sm hidden-xs"><a class="white" href="tel:18196619069">+1 819.661.9069</a> <span class="grey">|</span> <a href="mailto:adrian@adrianfaith.ca" class="white">adrian@adrianfaith.ca</a></p>  
+      """
+
+
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = false
+    tags = false
+    search = false
+
+[params.carouselCustomers]
+    items = 6
+    auto_play = false
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselTestimonials]
+    items = 4
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselHomepage]
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more information take a look at the README.
+    enable = true
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.features]
+    enable = true
+    cols = 3 # Default: 3, Available values 2,3,4,6
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more information take a look at the README.
+
+[params.galleryhome]
+    enable = true 
+    cols = 3 
+    title = "Gallery" 
+    subtitle = "This is some text describing the gallery that we can put here, doesn't need to be too long but describe the galleries in general. This some filler text to get an idea of length and what it will look like on the page."
+
+
+[params.testimonials]
+    enable = false
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more information take a look at the README.
+    title = "Testimonials"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+[languages.en.params.see_more]
+    enable = true
+    icon = "far fa-file-alt"
+    title = "Learn more about Adrian Faith Woodworking"
+    subtitle = "We're a little different than other companies, click below to find out why!"
+    link_url = "/about/"
+    link_text = "Learn More"
+
+[languages.fr.params.see_more]
+    enable = true
+    icon = "far fa-file-alt"
+    title = "Learn more about Adrian Faith"
+    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    link_url = "/about/"
+    link_text = "Check other homepages"
+
+[params.clients]
+    enable = false
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more information take a look at the README.
+    title = "Our Clients"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = false
+    title = "From our blog"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    hide_summary = false
+
+[params.footer.recent_posts]
+    enable = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
