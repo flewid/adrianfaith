@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "browserslist": "^4.21.3",
+    "cssnano": "^5.1.13",
+    "postcss-import": "^15.0.0",
+    "postcss-mixins": "^9.0.4",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.8.1",
+    "postcss-url": "^10.1.3"
+  }
+}

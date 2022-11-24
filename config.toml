@@ -1,6 +1,6 @@
-baseurl = "https://adrianfaith.ca"
+baseurl = "/"
 title = "Adrian Faith Woodworking"
-theme = "hugo-universal-theme"
+theme = ["hugo-universal-theme"]
 languageCode = "en-us"
 defaultContentLanguage = "en"
 disqusShortname = ""
@@ -8,6 +8,15 @@ googleAnalytics = "G-7XB3BJ10W0"
 summaryLength = 70
 paginate = 10
 pluralizelisttitles = false
+disableKinds = ["taxonomy", "term", "author", "authors", "taxonomyTerm"]
+
+[build]
+writeStats = true
+
+[outputs]
+home = [ "HTML" ]
+
+
 
 [languages]
   [languages.en]
@@ -80,10 +89,10 @@ pluralizelisttitles = false
 
 
 [languages.en.params]
-    viewMorePostLink = "/blog/"
+    #viewMorePostLink = "/blog/"
     author = "Flewid Inc."
     defaultKeywords = ["flewid", "adrian faith", "woodworking" , "cabinetry", "shelves", "mantels", "tables", "lac ste marie", "quebec" ]
-    mainSections = ["blog"]
+    #mainSections = ["blog"]
     defaultDescription = "#1 Custom Woodwork using local reclaimed wood. Call us today for a free quote!"
 
     # Social media
@@ -132,7 +141,7 @@ pluralizelisttitles = false
     #   5. change `enableRecaptchaInContactForm` is to true
     #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
     #
-    enableRecaptchaInContactForm = true
+    enableRecaptchaInContactForm = false
     googleRecaptchaKey = "6Ld6lCAjAAAAAOQrHxziRWYjxeyDhX-7_h6N2hvC"
 
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
@@ -163,27 +172,27 @@ pluralizelisttitles = false
     galtitle = "Latest from our workshop"
     galdesc= "This is a description text that goes on the gallery page"
     
-    galimage1= "/img/gallery/tables.webp"
+    galimage1= "/galleries/tables.webp"
     galimage1_url= "/gallery/tables/"
     galimage1_text= "Tables"
     
-    galimage2= "/img/gallery/shelving.webp"
+    galimage2= "/galleries/shelving.webp"
     galimage2_url= "/gallery/shelving/"
     galimage2_text= "Shelving"
     
-    galimage3= "/img/gallery/counters.webp"
+    galimage3= "/galleries/counters.webp"
     galimage3_url= "/gallery/counters/"
     galimage3_text= "Counters"
     
-    galimage4= "/img/gallery/mantels.webp"
+    galimage4= "/galleries/mantels.webp"
     galimage4_url= "/gallery/mantels/"
     galimage4_text= "Mantels"
     
-    galimage5= "/img/sample.webp"
+    galimage5= "/galleries/cabinetry.webp"
     galimage5_url= "/gallery/cabinetry/"
     galimage5_text= "Cabinetry"
     
-    galimage6= "/img/gallery/barndoors.webp"
+    galimage6= "/galleries/barndoors.webp"
     galimage6_url= "/gallery/barn-doors/"
     galimage6_text= "Barn Doors"
     
@@ -191,11 +200,11 @@ pluralizelisttitles = false
     galimage7_url= "/gallery/exposed-beam/"
     galimage7_text= "Exposed Beam"
     
-    galimage8= "/img/sample.webp"
+    galimage8= "/galleries/accent-walls.webp"
     galimage8_url= "/gallery/accent-walls/"
     galimage8_text= "Accent Walls"
     
-    galimage9= "/img/gallery/various.webp"
+    galimage9= "/galleries/various.webp"
     galimage9_url= "/gallery/various/"
     galimage9_text= "Various"
 
@@ -253,7 +262,7 @@ pluralizelisttitles = false
     #   5. change `enableRecaptchaInContactForm` is to true
     #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
     #
-    enableRecaptchaInContactForm = true
+    enableRecaptchaInContactForm = false
     googleRecaptchaKey = "6Ld6lCAjAAAAAOQrHxziRWYjxeyDhX-7_h6N2hvC"
 
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
@@ -283,20 +292,44 @@ pluralizelisttitles = false
         <strong>Great Britain</strong>
       </p>
       """
-    galtitle = "Dernières nouvelles de notre atelier"
+    galtitle = "Latest from our workshop"
     galdesc= "This is a description text that goes on the gallery page"
-    galimage1= "/img/300x300_sample.webp"
-    galimage1_url= "/fr/gallery/tables/"
-    galimage2= "/img/300x300_sample.webp"
-    galimage2_url= "/fr/gallery/shelving/"
-    galimage3= "/img/300x300_sample.webp"
-    galimage3_url= "/fr/gallery/accent-walls/"
-    galimage4= "/img/300x300_sample.webp"
-    galimage4_url= "/fr/gallery/mantels/"
-    galimage5= "/img/300x300_sample.webp"
-    galimage5_url= "/fr/gallery/cabinetry/"
-    galimage6= "/img/300x300_sample.webp"
-    galimage6_url= "/fr/gallery/various/"
+    
+    galimage1= "/galleries/tables.webp"
+    galimage1_url= "/gallery/tables/"
+    galimage1_text= "les tableaux"
+    
+    galimage2= "/galleries/shelving.webp"
+    galimage2_url= "/gallery/shelving/"
+    galimage2_text= "Rayonnage"
+    
+    galimage3= "/galleries/counters.webp"
+    galimage3_url= "/gallery/counters/"
+    galimage3_text= "Counters"
+    
+    galimage4= "/galleries/mantels.webp"
+    galimage4_url= "/gallery/mantels/"
+    galimage4_text= "Mantels"
+    
+    galimage5= "/galleries/cabinetry.webp"
+    galimage5_url= "/gallery/cabinetry/"
+    galimage5_text= "Armoires"
+    
+    galimage6= "/galleries/barndoors.webp"
+    galimage6_url= "/gallery/barn-doors/"
+    galimage6_text= "Barn Doors"
+    
+    galimage7= "/img/sample.webp"
+    galimage7_url= "/gallery/exposed-beam/"
+    galimage7_text= "Exposed Beam"
+    
+    galimage8= "/galleries/accent-walls.webp"
+    galimage8_url= "/gallery/accent-walls/"
+    galimage8_text= "Murs d’accent"
+    
+    galimage9= "/galleries/various.webp"
+    galimage9_url= "/gallery/various/"
+    galimage9_text= "Divers"
 
 
 [permalinks]
@@ -399,6 +432,7 @@ pluralizelisttitles = false
 
 [params.footer.recent_posts]
     enable = false
+
 
 [taxonomies]
   category = "categories"

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gallery on Adrian Faith Woodworking</title>
+    <link>https://adrianfaith.ca/gallery/</link>
+    <description>Recent content in Gallery on Adrian Faith Woodworking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://adrianfaith.ca/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Barn Doors</title>
+      <link>https://adrianfaith.ca/gallery/barn-doors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://adrianfaith.ca/gallery/barn-doors/</guid>
+      <description>Barn Doors some text below the title text</description>
+    </item>
+    
+    <item>
+      <title>Cabinetry</title>
+      <link>https://adrianfaith.ca/gallery/cabinetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://adrianfaith.ca/gallery/cabinetry/</guid>
+      <description>Cabinetry some text below the title text</description>
+    </item>
+    
+    <item>
+      <title>Counters</title>
+      <link>https://adrianfaith.ca/gallery/counters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://adrianfaith.ca/gallery/counters/</guid>
+      <description>Counters some text below the title text</description>
+    </item>
+    
+    <item>
+      <title>Exposed Beam</title>
+      <link>https://adrianfaith.ca/gallery/exposed-beam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://adrianfaith.ca/gallery/exposed-beam/</guid>
+      <description>Exposed Beam some text below the title text</description>
+    </item>
+    
+    <item>
+      <title>Mantels</title>
+      <link>https://adrianfaith.ca/gallery/mantels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://adrianfaith.ca/gallery/mantels/</guid>
+      <description>Mantels some text below the title text</description>
+    </item>
+    
+    <item>
+      <title>Shelving</title>
+      <link>https://adrianfaith.ca/gallery/shelving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://adrianfaith.ca/gallery/shelving/</guid>
+      <description>Shelving some text below the title text</description>
+    </item>
+    
+    <item>
+      <title>Tables</title>
+      <link>https://adrianfaith.ca/gallery/tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://adrianfaith.ca/gallery/tables/</guid>
+      <description>TABLES some text below the title text</description>
+    </item>
+    
+    <item>
+      <title>Various</title>
+      <link>https://adrianfaith.ca/gallery/various/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://adrianfaith.ca/gallery/various/</guid>
+      <description>Various some text below the title text</description>
+    </item>
+    
+  </channel>
+</rss>
