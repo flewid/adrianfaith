@@ -1,0 +1,18 @@
+{{ if .Site.Params.topbar.enable }}
+<header>
+  <div id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-5">
+          {{ .Site.Params.topbar.text | safeHTML }}
+        </div>
+        <div class="col-xs-7">
+          <div id="language-select">
+            <a href="/"> EN </a>  <span class="grey">|</span>  <a href="/fr/"> FR </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{{ end }}

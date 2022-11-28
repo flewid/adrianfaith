@@ -1,0 +1,38 @@
+{{ if isset .Site.Params "galleryhome" }}
+{{ if .Site.Params.galleryhome.enable }}
+<section class="bar no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center galleryheader">
+                    <h2>{{ .Site.Params.galleryhome.title }}</h2>
+                </div>
+
+                <p class="lead gallerytext">
+                  {{ .Site.Params.galleryhome.subtitle | markdownify }}
+                </p>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box-simple">
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage1_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage1" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage1_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage1_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage2_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage2" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage2_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage2_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage3_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage3" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage3_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage3_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage4_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage4" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage4_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage4_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage5_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage5" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage5_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage5_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage6_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage6" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage6_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage6_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage7_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage7" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage7_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage7_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage8_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage8" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage8_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage8_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage9_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage9" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage9_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage9_text" }}</div></a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}
