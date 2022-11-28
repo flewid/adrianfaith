@@ -147,6 +147,9 @@ p {
     text-shadow: 2px 2px #000; 
 }
 
+.small-logo {
+    margin-top: 14px !important;
+}
 
  /* Container holding the image and the text */
  .gallerycontainer {

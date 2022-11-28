@@ -7,14 +7,14 @@
                       <h4>{{ .Site.Params.logo_text }}</h4>
                     {{ else }}
                       <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm" width="250px" height="60px" />
-                      <img src="{{ .Site.Params.logo_small | relURL }}" alt="{{ .Title }} logo" class="visible-xs visible-sm" width="220px" height="94px" />
+                      <img src="{{ .Site.Params.logo_small | relURL }}" alt="{{ .Title }} logo" class="visible-xs visible-sm" style="margin-top: 12px" width="160px" height="27px" />
                     {{ end }}
                     <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
                       <span class="sr-only">{{ i18n "navToggle" }}</span>
-                        <i class="fas fa-align-justify"></i>
+                        <span class="icon-align-justify"></span>
                     </button>
                 </div>
             </div>

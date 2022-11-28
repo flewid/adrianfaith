@@ -400,7 +400,7 @@ home = [ "HTML" ]
 
 [languages.en.params.see_more]
     enable = true
-    icon = "icon-map-marker"
+    icon = "icon-question"
     title = "Learn more about Adrian Faith Woodworking"
     subtitle = "We're a little different than other companies, click below to find out why!"
     link_url = "/about/"
@@ -408,7 +408,7 @@ home = [ "HTML" ]
 
 [languages.fr.params.see_more]
     enable = true
-    icon = "icon-map-marker"
+    icon = "icon-question"
     title = "Learn more about Adrian Faith"
     subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
     link_url = "/about/"
