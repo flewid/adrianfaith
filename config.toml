@@ -4,7 +4,7 @@ theme = ["hugo-universal-theme"]
 languageCode = "en-us"
 defaultContentLanguage = "en"
 disqusShortname = ""
-googleAnalytics = "G-7XB3BJ10W0"
+#googleAnalytics = "G-7XB3BJ10W0"
 summaryLength = 70
 paginate = 10
 pluralizelisttitles = false
@@ -228,8 +228,6 @@ home = [ "HTML" ]
     latitude = "-12.043333"
     longitude = "-77.028333"
 
-    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "marsala"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -402,15 +400,15 @@ home = [ "HTML" ]
 
 [languages.en.params.see_more]
     enable = true
-    icon = "far fa-file-alt"
+    icon = "icon-map-marker"
     title = "Learn more about Adrian Faith Woodworking"
     subtitle = "We're a little different than other companies, click below to find out why!"
     link_url = "/about/"
-    link_text = "Learn More"
+    link_text = "Learn More About Adrian Faith"
 
 [languages.fr.params.see_more]
     enable = true
-    icon = "far fa-file-alt"
+    icon = "icon-map-marker"
     title = "Learn more about Adrian Faith"
     subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
     link_url = "/about/"

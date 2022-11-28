@@ -1,18 +1,26 @@
-const purgecss = require('@fullhuman/postcss-purgecss')({
-    content: ['./hugo_stats.json'],
-    defaultExtractor: content => {
-      const els = JSON.parse(content).htmlElements;
-      return [
-        ...(els.tags || []),
-        ...(els.classes || []),
-        ...(els.ids || []),
-      ];
-    },
-    safelist: ['dropdown', 'open', 'dropdown-toggle', 'ion-ios-arrow-down', 'navbar-nav', 'dropdown', 'dropdown-toggle', 'navbar-collapse']
-  });
-  
-  module.exports = {
-    plugins: [
-      ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])
-    ]
+module.exports = {
+    plugins: {
+        '@fullhuman/postcss-purgecss': {
+            content: [
+                './themes/hugo-universal-theme/layouts/**/*.html', 
+                './themes/hugo-universal-theme/assets/js/*.js',
+                './themes/hugo-universal-theme/static/js/*.js',
+                './layouts/**/*.html',
+                './static/js/*.js'
+              ],
+            whitelist: [
+                'highlight',
+                'language-bash',
+                'pre',
+                'code',
+                'content',
+                'h3',
+                'h4',
+                'ul',
+                'li'
+            ]
+        },
+        autoprefixer: {},
+        cssnano: {preset: 'default'}
+    }
   };
