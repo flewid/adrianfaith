@@ -43,6 +43,7 @@
     ],
     "classes": [
       "active",
+      "align-right",
       "background-image-fixed-2",
       "background-white",
       "bar",
@@ -141,7 +142,6 @@
       "row-1",
       "row-even",
       "row-odd",
-      "small-logo",
       "sr-only",
       "text-center",
       "text-muted",
