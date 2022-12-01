@@ -1,6 +1,24 @@
 {{ if default true .Site.Params.CarouselHomepage.enable }}
+
+{{ if eq $.Site.Language.LanguageName "EN" }}
 {{ if isset .Site.Data "carousel" }}
-{{ if gt (len .Site.Data.carousel) 0 }}
+{{ if gt (len .Site.Data.carousel ) 0 }}
+<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"/img/woodtile.webp"
+			)
+		//--><!]]>
+	</script>
+</div>
 <section>
     <div class="home-carousel">
         <div class="dark-mask"></div>
@@ -11,21 +29,16 @@
                 data-pagination-speed="{{ default 1000 .Site.Params.CarouselHomepage.pagination_speed }}">
                 {{ range sort .Site.Data.carousel "weight" }}
                 <div class="item">
-                    {{ if .href }}
-                    <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
-                    {{ end }}
                         <div class="row">
                             <div class="col-sm-5 right">
                                 <h1>{{ .title | safeHTML }}</h1>
                                 <h2>{{ .description | safeHTML }}</h2>
+                                <p> <a href="{{ .button_url | safeHTML }}" class="btn btn-template-transparent-black btn-lg">{{ .button_text | safeHTML }}</a></p>
                             </div>
                             <div class="col-sm-7">
                                 <img class="img-responsive" src="{{ .image }}" alt="" width="800px" height="440px">
                             </div>
                         </div>
-                    {{ if .href }}
-                    </a>
-                    {{ end }}
                 </div>
                 {{ end }}
             </div>
@@ -33,6 +46,65 @@
         </div>
     </div>
 </section>
+
 {{ end }}
 {{ end }}
+{{ end }}
+
+
+
+{{ if eq $.Site.Language.LanguageName "FR" }}
+{{ if isset .Site.Data "carousel" }}
+{{ if gt (len .Site.Data.carousel ) 0 }}
+<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"/img/woodtile.webp"
+			)
+		//--><!]]>
+	</script>
+</div>
+<section>
+    <div class="home-carousel">
+        <div class="dark-mask"></div>
+        <div class="container">
+            <div class="homepage owl-carousel"
+                data-autoplay="{{ default true .Site.Params.CarouselHomepage.auto_play }}"
+                data-slide-speed="{{ default 2000 .Site.Params.CarouselHomepage.slide_speed }}"
+                data-pagination-speed="{{ default 1000 .Site.Params.CarouselHomepage.pagination_speed }}">
+                {{ range sort .Site.Data.carousel "weight" }}
+                <div class="item">
+                        <div class="row">
+                            <div class="col-sm-5 right">
+                                <h1>{{ .title_fr | safeHTML }}</h1>
+                                <h2>{{ .description_fr | safeHTML }}</h2>
+                                <p> <a href="{{ .button_url_fr | safeHTML }}" class="btn btn-template-transparent-black btn-lg">{{ .button_text_fr | safeHTML }}</a></p>
+                            </div>
+                            <div class="col-sm-7">
+                                <img class="img-responsive" src="{{ .image_fr }}" alt="" width="800px" height="440px">
+                            </div>
+                        </div>
+                </div>
+                {{ end }}
+            </div>
+            <!-- /.project owl-slider -->
+        </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}
+{{ end }}
+
+
+
+
 {{ end }}

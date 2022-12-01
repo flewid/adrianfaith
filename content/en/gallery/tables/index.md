@@ -1,6 +1,5 @@
 +++
 title = "Tables"
-layout = "photography"
 +++
 
 ### TABLES

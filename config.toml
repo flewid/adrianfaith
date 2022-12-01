@@ -52,37 +52,34 @@ home = [ "HTML" ]
 # FR
 [languages.fr]
     contentDir = "content/fr"
-    title = "Adrian Faith Woodworking"
+    title = "Adrian Faith Ébénisterie"
     languageName = "FR"
     weight = 2
 
 # Main menu
 [[languages.fr.menu.main]]
     name       = "Accueil"
-    identifier = "menu.home"
+    identifier = "menu.accueil"
     url        = "/fr/"
     weight     = 1
 
 [[languages.fr.menu.main]]
     name       = "Qui sommes-nous"
-    identifier = "menu.about"
-    url        = "/fr/about/"
+    identifier = "menu.qui-sommes-nous"
+    url        = "/fr/qui-sommes-nous/"
     weight     = 2
 
 [[languages.fr.menu.main]]
     name       = "Galerie"
-    identifier = "menu.gallery" 
-    url        = "/fr/gallery/"
+    identifier = "menu.galerie" 
+    url        = "/fr/galerie/"
     weight     = 3
 
 [[languages.fr.menu.main]]
     name       = "Contacter"
-    identifier = "contact"
-    url        = "/fr/contact/"
+    identifier = "menu.contacter"
+    url        = "/fr/contacter/"
     weight     = 4
-
-
-
 
 
 
@@ -167,6 +164,8 @@ home = [ "HTML" ]
         <br>Lac-Sainte-Marie
         <br>Quebec
         <br>J0X 1Z0
+        <br> 
+        <br><a href="mailto:adrian@adrianfaith.ca">adrian@adrianfaith.ca</a>
       </p>
       """
     galtitle = "Latest from our workshop"
@@ -211,123 +210,78 @@ home = [ "HTML" ]
 
 [languages.fr.params]
     viewMorePostLink = "/blog/"
-    author = "DevCows"
-    defaultKeywords = ["devcows", "hugo", "go"]
-    mainSections = ["blog"]
-    defaultDescription = "Site template made by Devcows using Hugo"
-
-    # Social media
+    author = "Flewid Inc."
+    defaultKeywords = ["flewid", "adrian faith", "woodworking" , "cabinetry", "shelves", "mantels", "tables", "lac ste marie", "quebec" ]
+    #mainSections = ["blog"]
+    defaultDescription = "#1 Menuiserie sur mesure utilisant du bois récupéré local. Appelez-nous dès aujourd’hui pour un devis gratuit! "
     facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
     twitter_site = "GoHugoIO" # the Twitter handle of your site (without the '@')
     default_sharing_image = "img/sharing-default.webp"
-
-    # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
-    enableGoogleMaps = true
+    enableGoogleMaps = false
     googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
-
     latitude = "-12.043333"
     longitude = "-77.028333"
-
-
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 50 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - register your account to https://formspree.io/register
-    # - login and create new form
-    # - set your form's endpoint url under 'formspree_action' below
-    # - upload the generated site to your server
-    # - test a dummy email yourself
-    # - you're done. Happy mailing!
-    #
-    # Enable the contact form by entering your Formspree.io endpoint url
     formspree_action = "https://formspree.io/f/mzbwwrkq"
     contact_form_ajax = true
-
-    # Formspree form supports Google reCAPTCHA Key (type v2).
-    # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
-    #
-    # By default, Formspree use a redirect page for recaptcha widget.
-    # If you use a recaptcha widget in your contact page, you should do next steps.
-    # (if you don't want, skip these steps)
-    #
-    #   1. register your site on Google recaptcha admin page: https://www.google.com/recaptcha/admin
-    #   2. select reCAPTCHA v2 and checkbox widget type.
-    #   3. remember site key and secret key.
-    #   4. enter secret key into "Custom reCAPTCHA Key" field in your Formspree form setting page.
-    #   5. change `enableRecaptchaInContactForm` is to true
-    #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
-    #
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "6Ld6lCAjAAAAAOQrHxziRWYjxeyDhX-7_h6N2hvC"
-
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-    copyright = "Copyright © 2015 - 2016, YourCompany; all rights reserved."
+    copyright = "Copyright © 2022, Adrian Faith Ébénisterie; Tous droits réservés."
     privacy_text = "Confidentialité"
-    privacy_url = "/fr/privacy/"
+    privacy_url = "/fr/confidentialite/"
     terms_text = "Conditions"
-    terms_url = "/fr/terms/"
-
-    # Format dates with Go's time formatting
+    terms_url = "/fr/conditions/"
     date_format = "January 2, 2006"
-
     dropdown_mouse_over = true
-
-    disabled_logo = true
-    logo_text = "Adrian Faith Woodworking"
-
-    logo = "img/logo.png"
-    logo_small = "img/logo-small.png"
+    disabled_logo = false
+    logo_text = "Adrian Faith Ébénisterie"
+    logo = "img/logo_french.webp"
+    logo_small = "img/logo_small.webp"
     contact_url = "/contact"
-    address = """<p class="text-uppercase"><strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
-        <br>
-        <strong>Great Britain</strong>
+    address = """<p class="text-uppercase"><strong>Adrian Faith Woodworking</strong>
+        <br>3 Rue Faith
+        <br>Lac-Sainte-Marie
+        <br>Quebec
+        <br>J0X 1Z0
       </p>
       """
-    galtitle = "Latest from our workshop"
-    galdesc= "This is a description text that goes on the gallery page"
-    
+    galtitle = "Dernières nouvelles de notre atelier"
+    galdesc= " Il s’agit d’un texte de description qui va sur la page de la galerie"    
     galimage1= "/galleries/tables.webp"
-    galimage1_url= "/gallery/tables/"
-    galimage1_text= "les tableaux"
+    galimage1_url= "/fr/galerie/tableaux/"
+    galimage1_text= "Tableaux"
     
     galimage2= "/galleries/shelving.webp"
-    galimage2_url= "/gallery/shelving/"
+    galimage2_url= "/fr/galerie/rayonnage/"
     galimage2_text= "Rayonnage"
     
     galimage3= "/galleries/counters.webp"
-    galimage3_url= "/gallery/counters/"
-    galimage3_text= "Counters"
+    galimage3_url= "/fr/galerie/compteurs/"
+    galimage3_text= "Compteurs"
     
     galimage4= "/galleries/mantels.webp"
-    galimage4_url= "/gallery/mantels/"
+    galimage4_url= "/fr/galerie/mantels/"
     galimage4_text= "Mantels"
     
     galimage5= "/galleries/cabinetry.webp"
-    galimage5_url= "/gallery/cabinetry/"
+    galimage5_url= "/fr/galerie/armoires/"
     galimage5_text= "Armoires"
     
     galimage6= "/galleries/barndoors.webp"
-    galimage6_url= "/gallery/barn-doors/"
-    galimage6_text= "Barn Doors"
+    galimage6_url= "/fr/galerie/portes-de-grange/"
+    galimage6_text= "Portes de grange"
     
     galimage7= "/img/sample.webp"
-    galimage7_url= "/gallery/exposed-beam/"
-    galimage7_text= "Exposed Beam"
+    galimage7_url= "/fr/galerie/faisceau-apparent/"
+    galimage7_text= "Faisceau apparent"
     
     galimage8= "/galleries/accent-walls.webp"
-    galimage8_url= "/gallery/accent-walls/"
-    galimage8_text= "Murs d’accent"
+    galimage8_url= "/fr/galerie/murs-daccent/"
+    galimage8_text= "Murs d’accentuation"
     
     galimage9= "/galleries/various.webp"
-    galimage9_url= "/gallery/various/"
-    galimage9_text= "Divers"
+    galimage9_url= "/fr/galerie/projets-personnalises/"
+    galimage9_text= "Projets personnalisés"
 
 
 [permalinks]
@@ -411,7 +365,7 @@ home = [ "HTML" ]
     icon = "icon-question"
     title = "Learn more about Adrian Faith"
     subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url = "/about/"
+    link_url = "/fr/qui-sommes-nous/"
     link_text = "Check other homepages"
 
 [params.clients]

@@ -1,4 +1,5 @@
-weight: 4
+weight: 1
+
 title: "RECLAIMED PASSION"
 description: >
   <ul class="list-style-none">
@@ -7,3 +8,17 @@ description: >
   </ul>
 image: "/img/banner/bunk-beds.webp"
 href: "/about/"
+button_url: "/about/"
+button_text: "Learn More"
+
+
+title_fr: "UNE PASSION RÉCUPÉRÉE"
+description_fr: >
+  <ul class="list-style-none">
+    <li>Des conceptions personnalisées</li>
+    <li>avec des bois locaux récupérés </li>
+  </ul>
+image_fr: "/img/banner/bunk-beds.webp"
+href_fr: "/fr/qui-sommes-nous/"
+button_url_fr: "/fr/qui-sommes-nous/"
+button_text_fr: "apprendre encore plus"

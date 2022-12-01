@@ -21,7 +21,7 @@
 
 {{ $bootstrap := resources.Get "css/bootstrap.css" }}
 {{ $bootstrap := $bootstrap | resources.PostCSS }}
-{{ $bootstrap = $bootstrap  | minify | fingerprint | resources.PostProcess }}
+{{ $bootstrap = $bootstrap  | postCSS | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $bootstrap.RelPermalink}}" media="screen" integrity="{{ $bootstrap.Data.Integrity }}"> 
 <!-- <link rel="preload" href="{{ $bootstrap.RelPermalink}}" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="{{ $bootstrap.Data.Integrity }}">
 <noscript><link rel="stylesheet" href="css/bootstrap.css"></noscript> -->
@@ -40,13 +40,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | relURL }}">
 <link rel="manifest" href="/site.webmanifest">
 
-
-{{ "<!-- Main Stylesheets -->" | safeHTML }}
-
-
 {{ $fonts := resources.Get "scss/fonts.scss" }}
 {{ $fonts := $fonts | resources.ToCSS | resources.PostCSS }}
-{{ $fonts = $fonts  | minify | fingerprint | resources.PostProcess }}
+{{ $fonts = $fonts  | postCSS | minify | fingerprint | resources.PostProcess }}
 <link rel="preload" href="{{ $fonts.RelPermalink}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="scss/fonts.scss"></noscript>
 

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("/fonts/icomoon.eot?skyrdf");
+  src: url("/fonts/icomoon.eot?skyrdf#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?skyrdf") format("truetype"), url("/fonts/icomoon.woff?skyrdf") format("woff"), url("/fonts/icomoon.svg?skyrdf#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #fff;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-question:before {
+  content: "\f128"; }
+
+.icon-align-justify:before {
+  content: "\f039"; }
+
+.icon-pencil:before {
+  content: "\f040"; }
+
+.icon-map-marker:before {
+  content: "\f041"; }
+
+.icon-history:before {
+  content: "\f1da"; }
+
+.icon-paint-brush:before {
+  content: "\f1fc"; }
+
+.icon-object-group:before {
+  content: "\f247"; }
+
+.icon-sign-language:before {
+  content: "\f2a7"; }
+
+.icon-signing:before {
+  content: "\f2a7"; }

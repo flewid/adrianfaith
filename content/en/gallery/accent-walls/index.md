@@ -1,6 +1,5 @@
 +++
 title =  "Accent Walls"
-layout = "photography"
 +++
 
 ### ACCENT WALLS

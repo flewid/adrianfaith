@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+            <div class="container">
+
+                  <div class="row">
+
+                    <div class="col-md-12">
+
+
+                      {{ if eq .Title  "Galerie" }}
+
+                        <div class="heading text-center galleryheader">
+                            <h2>{{ .Site.Param "galtitle" }}</h2>
+                            <p>&nbsp;</p>
+                            <p class="lead gallerytext">{{ .Site.Param "galdesc" }}</p>
+                        </div>
+
+                        <div class="box-simple">
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage1_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage1" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage1_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage1_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage2_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage2" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage2_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage2_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage3_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage3" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage3_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage3_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage4_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage4" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage4_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage4_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage5_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage5" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage5_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage5_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage6_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage6" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage6_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage6_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage7_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage7" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage7_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage7_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage8_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage8" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage8_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage8_text" }}</div></a></div>
+                            <div class="gallerycontainer"><a href="{{ .Site.Param "galimage9_url" | relURL }}"><img loading="lazy" class="gallerypad" src="{{ .Site.Param "galimage9" | relURL }}" width="300px" height="300px" alt="{{ .Site.Param "galimage9_text" }}"/><div class="gallerycentered">{{ .Site.Param "galimage9_text" }}</div></a></div>
+                        </div>
+                        <p>&nbsp;</p>
+
+                        {{ else }}
+                          
+                          {{ .Content }}
+
+                          <p>&nbsp;</p>
+
+                        {{ end }}
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

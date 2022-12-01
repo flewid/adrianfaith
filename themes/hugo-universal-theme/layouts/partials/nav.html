@@ -28,7 +28,7 @@
                   {{ $topLevel := replace .URL "/" "" }}
                   {{ $active := "" }}
 
-                  {{ if eq $current.RelPermalink .URL }}
+                  {{ if eq $current.RelPermalink .URL  }}
                     {{ $active = "active" }}
                   {{ end }}
 

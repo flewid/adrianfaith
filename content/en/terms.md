@@ -1,5 +1,5 @@
 +++
-title = "Terms"
+title = "Conditions"
 +++
 
 *Last updated: November, 27, 2022*
